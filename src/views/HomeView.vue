@@ -100,7 +100,7 @@ onMounted(() => {
   <header class="hero">
     <div class="wrap hero-grid">
       <div>
-        <span class="eyebrow reveal d1">Philippines · Year-Round Security Bundle</span>
+        <span class="eyebrow reveal d1">Year-Round Security Bundle</span>
         <h1 class="reveal d2">One package.<br>Full-year <span class="accent">cybersecurity</span> coverage.</h1>
         <p class="lede reveal d2">Most businesses get tested once a year — and stay exposed for the other 364 days. This bundle runs all year: VAPT twice over, ISO 27001 compliance support, quarterly training, and phishing simulation under one engagement.</p>
 
@@ -124,7 +124,7 @@ onMounted(() => {
           <span class="bc-tag">5 SERVICES</span>
         </div>
         <div class="bc-line"><span class="tick">✓</span><span><strong>VAPT, twice a year</strong> — up to 25 IPs &amp; 3 web apps</span></div>
-        <div class="bc-line"><span class="tick">✓</span><span>Access to <strong>VaptFix.ai</strong> remediation platform</span></div>
+        <div class="bc-line"><span class="tick">✓</span><span>Access to <a href="http://vaptfix.ai/" target="_blank" rel="noopener noreferrer" class="vaptfix-link"><strong>VaptFix.ai</strong></a> remediation platform</span></div>
         <div class="bc-line"><span class="tick">✓</span><span><strong>ISO 27001</strong> compliance support</span></div>
         <div class="bc-line"><span class="tick">✓</span><span><strong>Quarterly</strong> cybersecurity awareness training</span></div>
         <div class="bc-line"><span class="tick">✓</span><span><strong>Phishing simulation</strong> for up to 50 users</span></div>
@@ -551,6 +551,8 @@ nav {
 }
 .bc-line:last-child { border-bottom: none; }
 .bc-line .tick { color: var(--navy); font-size: 15px; font-weight: 700; flex-shrink: 0; margin-top: 2px; }
+.vaptfix-link { color: var(--navy); text-decoration: none; font-weight: 700; }
+.vaptfix-link:hover { color: var(--navy-dark); }
 
 /* ─── TRUST STRIP ─── */
 .trust { background: var(--navy); padding: 26px 0; }
@@ -558,7 +560,7 @@ nav {
   display: flex; flex-wrap: wrap;
   align-items: center; justify-content: space-between; gap: 24px;
 }
-.trust-item { display: flex; align-items: baseline; gap: 10px; }
+.trust-item { display: flex; align-items: center; gap: 10px; }
 .trust-item .n { font-family: var(--font-h); font-size: 28px; font-weight: 800; color: var(--yellow); line-height: 1; }
 .trust-item .l { font-size: 13px; color: rgba(255,255,255,0.6); max-width: 140px; line-height: 1.3; }
 .trust-iso { font-size: 12px; color: rgba(255,255,255,0.5); letter-spacing: 0.04em; }
@@ -586,7 +588,7 @@ section.block.alt { background: var(--surface); }
   transition: box-shadow 0.2s, transform 0.2s;
 }
 .feat:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
-.feat:last-child { border-top-color: var(--yellow); }
+.feat:last-child { border-top-color: var(--navy); }
 .feat .ic {
   width: 46px; height: 46px;
   background: rgba(27,64,128,0.08); border-radius: 8px;
@@ -605,7 +607,7 @@ section.block.alt { background: var(--surface); }
 .step { position: relative; padding: 0 24px 0 0; }
 .step:not(:last-child)::after {
   content: ''; position: absolute;
-  top: 19px; right: 6px;
+  top: 12px; right: calc(50% - 26px);
   width: 14px; height: 14px;
   border-top: 2px solid var(--border2);
   border-right: 2px solid var(--border2);
