@@ -9,7 +9,7 @@ import os
 load_dotenv()
 
 app = FastAPI(
-    root_path="/info/api"
+    root_path="/year-round-security-bundle/api"
 )
 
 app.add_middleware(
