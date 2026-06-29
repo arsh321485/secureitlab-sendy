@@ -8,7 +8,9 @@ import os
 
 load_dotenv()
 
-app = FastAPI()
+app = FastAPI(
+    root_path="/info/api"
+)
 
 app.add_middleware(
     CORSMiddleware,
