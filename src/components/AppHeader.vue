@@ -48,8 +48,23 @@ nav {
 }
 .nav-cta:hover { background: #D4A900; }
 
-@media (max-width: 560px) {
-  .nav-cta { font-size: 12px; padding: 9px 18px; }
+@media (max-width: 768px) {
+  .nav-inner { height: 60px; }
+  .nav-logo img { height: 32px; }
   .wrap { padding: 0 20px; }
+  .nav-cta { font-size: 12px; padding: 10px 20px; }
+}
+
+@media (max-width: 480px) {
+  .nav-inner { height: 56px; }
+  .nav-logo img { height: 28px; }
+  .wrap { padding: 0 14px; }
+  .nav-cta { font-size: 11px; padding: 8px 14px; letter-spacing: 0; }
+}
+
+@media (max-width: 360px) {
+  .nav-logo img { height: 24px; }
+  .wrap { padding: 0 10px; }
+  .nav-cta { font-size: 10px; padding: 7px 12px; }
 }
 </style>

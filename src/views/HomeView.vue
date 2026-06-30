@@ -756,22 +756,47 @@ form.sent .form-intro { display: none; }
 
 /* ─── RESPONSIVE ─── */
 @media (max-width: 900px) {
+  .hero { padding: 40px 0 52px; }
+  .hero .lede { font-size: 16px; }
   .hero-grid { grid-template-columns: 1fr; gap: 36px; }
+  section.block { padding: 60px 0; }
+  .closing { padding: 64px 0; }
   .quote-grid { grid-template-columns: 1fr; gap: 32px; }
   .steps { grid-template-columns: 1fr 1fr; }
   .step:nth-child(2)::after { display: none; }
+  .trust-inner { justify-content: center; gap: 16px; }
   .foot-main { grid-template-columns: 1fr; }
   .foot-left, .foot-right { padding: 36px 32px; }
 }
 @media (max-width: 560px) {
   .wrap { padding: 0 20px; }
+  .nav-logo img { height: 32px; }
+  .nav-cta { font-size: 12px; padding: 9px 18px; }
+  .hero { padding: 28px 0 36px; }
+  .hero .lede { font-size: 15px; }
+  .hero-actions { gap: 10px; }
+  .hero-stats { flex-wrap: wrap; gap: 12px; width: 100%; padding: 12px 16px; }
+  .hstat-div { display: none; }
+  .hstat { flex-direction: row; align-items: center; gap: 6px; }
+  .hstat-n { font-size: 18px; }
+  section.block { padding: 44px 0; }
+  .sec-head { margin-bottom: 32px; }
+  .closing { padding: 44px 0; }
+  .trust { padding: 18px 0; }
+  .trust-inner { flex-direction: column; align-items: center; text-align: center; gap: 14px; }
+  .trust-item { flex-direction: column; align-items: center; gap: 4px; }
+  .trust-item .n { font-size: 24px; }
+  .trust-item .l { text-align: center; max-width: none; }
+  .trust-iso { text-align: center; }
   .form-row { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr; }
   .step::after { display: none !important; }
   form { padding: 24px 20px; }
-  .nav-cta { font-size: 12px; padding: 9px 18px; }
-  .hero-stats { flex-wrap: wrap; gap: 14px; }
-  .foot-iso { flex-wrap: wrap; }
+  .foot-left, .foot-right { padding: 28px 20px; }
+  .foot-iso { flex-wrap: wrap; gap: 12px; }
+  .foot-iso img { height: 48px; }
+  .foot-bar-inner { flex-direction: column; align-items: center; text-align: center; gap: 8px; }
+  .quote-copy p { max-width: 100%; }
 }
 
 @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
